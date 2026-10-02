@@ -1,0 +1,6 @@
+services:
+  connector:
+    build: .
+    ports: ["8080:8080"]
+    environment:
+      FRESHDESK_MOCK: "true"

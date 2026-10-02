@@ -1,0 +1,11 @@
+server:
+  port: ${PORT:8080}
+spring:
+  application:
+    name: freshdesk-agent-connector
+freshdesk:
+  domain: ${FRESHDESK_DOMAIN:example.freshdesk.com}
+  api-key: ${FRESHDESK_API_KEY:}
+  mock: ${FRESHDESK_MOCK:true}
+  max-retries: ${FRESHDESK_MAX_RETRIES:3}
+  request-timeout-ms: ${FRESHDESK_REQUEST_TIMEOUT_MS:5000}
